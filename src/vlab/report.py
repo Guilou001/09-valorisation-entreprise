@@ -86,8 +86,8 @@ def fig_croissance_implicite(implied: float, hist_fcff: float, hist_rev: float, 
     fr = use_style()
     fig, ax = plt.subplots(figsize=(8, 3.2))
     labels = ["Croissance implicite dans le cours\n(DCF inversé, 5 premières années)",
-              "FCFF réalisé, croissance annuelle\nmoyenne des 10 derniers exercices",
-              "Revenus réalisés, croissance annuelle\nmoyenne des 10 derniers exercices"]
+              "FCFF réalisé, croissance annuelle\nlissée sur la période 2011-2025",
+              "Revenus réalisés, croissance annuelle\ndes 10 derniers exercices (2015-2025)"]
     vals = [100 * implied, 100 * hist_fcff, 100 * hist_rev]
     colors = [OKABE_ITO[3], OKABE_ITO[0], OKABE_ITO[2]]
     bars = ax.barh(labels[::-1], vals[::-1], color=colors[::-1], height=0.55)
@@ -129,7 +129,7 @@ def build_workbook(hist: pd.DataFrame, h: Hypotheses, sens: pd.DataFrame, comps:
     ws["A1"], ws["A1"].font = "Hypothèses (modifiables)", bold
     inputs = [("FCFF de départ (M$ CAD)", h.fcff_base), ("WACC", h.wacc),
               ("Croissance années 1 à 5", h.g_initial), ("Croissance perpétuelle", h.g_terminal),
-              ("Dette nette (M$ CAD)", h.dette_nette), ("Actions diluées (millions)", h.actions)]
+              ("Dette nette (M$ CAD)", h.dette_nette), ("Actions en circulation (millions)", h.actions)]
     for i, (label, value) in enumerate(inputs, start=2):
         ws[f"A{i}"], ws[f"B{i}"] = label, round(float(value), 4)
     ws["A9"], ws["A9"].font = "Projection", bold

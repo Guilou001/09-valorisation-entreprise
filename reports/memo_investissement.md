@@ -7,8 +7,9 @@ les chiffres portent leur statut ; ils viennent de `results/tables/` du dépôt,
 
 ## La photographie
 
-Le CN exploite un réseau ferroviaire de 30 000 km, un quasi-duopole nord-américain avec le CP à
-l'ouest et un oligopole à l'est. En quinze exercices (SEC, mesuré) : revenus passés de 9,0 à
+Le CN exploite un réseau ferroviaire d'environ 30 000 km (rapporté par la société), dans un
+marché nord-américain à très peu d'acteurs, le CP étant l'autre transcontinental canadien.
+En quinze exercices (SEC, mesuré) : revenus passés de 9,0 à
 17,3 milliards de CAD, marge d'exploitation entre 34 % et 42 %, flux de trésorerie disponible
 entre 13 % et 24 % des revenus. Cours au 28 août 2026 : 175,06 $ (rapporté, Yahoo) ; dette nette
 20,9 G$ et FCFF moyen 2023-2025 de 4,1 G$ (mesurés, SEC).
@@ -23,8 +24,8 @@ entre 13 % et 24 % des revenus. Cours au 28 août 2026 : 175,06 $ (rapporté, Ya
    Yahoo au 28 août 2026), le CN, qui se paie 14,0 et 22,5 fois, vaudrait 200 $ (EV/EBITDA) à
    225 $ (P/E) : il est le MOINS cher de sa cohorte.
 3. **Le DCF inversé fait le pont : le cours suppose 11,9 %.** Pour justifier 175 $, il faut
-   11,9 % de croissance annuelle du FCFF pendant cinq ans. Le réalisé sur dix ans est 7,8 %, et
-   cette croissance devait beaucoup à l'expansion des marges, qui ne se répète pas à l'infini ;
+   11,9 % de croissance annuelle du FCFF pendant cinq ans. Le réalisé est de 7,8 % par an sur 2011-2025, de
+   4,0 % seulement sur les dix dernières années (2015-2025), et cette croissance devait beaucoup à l'expansion des marges, qui ne se répète pas à l'infini ;
    les revenus, eux, ont crû de 3,2 % par an.
 
 Certes, la lecture relative (le CN décoté face à ses pairs) et la lecture absolue (le cours
@@ -36,7 +37,7 @@ de sa valeur intrinsèque prudente. Le juge de paix est la croissance livrée le
 
 | Lecture | Elle casse si | Références chiffrées |
 |---|---|---|
-| « Le cours est exigeant » (DCF inversé) | le FCFF croît durablement au-dessus de 11,9 % par an, par exemple par un nouveau cycle de marges ou de prix | croissance implicite 11,9 % contre 7,8 % livré (tables `hypotheses.csv`) |
+| « Le cours est exigeant » (DCF inversé) | le FCFF croît durablement au-dessus de 11,9 % par an, par exemple par un nouveau cycle de marges ou de prix | croissance implicite 11,9 % contre 7,8 % livré sur 2011-2025 (tables `hypotheses.csv`) |
 | « Le DCF prudent à 93 $ » | la croissance ancrée sur les revenus (3,2 %) sous-estime le pouvoir de prix ; à 7,8 % (le FCFF réalisé), le modèle donne une valeur nettement plus haute (voir `sensibilite.csv` et le classeur, hypothèses modifiables) | sensibilité : de 56 $ (WACC 9,5 %, g 1 %) à 202 $ (WACC 6 %, g 3 %) |
 | « Décoté face aux pairs » | les multiples des pairs se dégonflent (ils embarquent 29,8 fois les bénéfices) plutôt que le CN qui se réévalue | médiane pairs 16,6 × EBITDA contre 14,0 × pour le CN |
 
@@ -55,12 +56,13 @@ Not a buy or sell recommendation: this memo states what the price implies, compa
 the company has delivered, and spells out what would overturn each reading. Every figure carries
 its status (measured from SEC filings, reported from Yahoo on a dated snapshot, or modeled).
 
-CN is a 30,000 km rail network in a North American quasi-duopoly. Over fifteen fiscal years:
+CN operates a rail network of roughly 30,000 km (company-reported), in a North American market
+with very few players. Over fifteen fiscal years:
 revenues up from C$9.0bn to C$17.3bn, operating margins between 34 % and 42 %. At C$175.06, a
 prudent DCF (3.2 % growth for five years, the revenue track record, fading to 2 %, WACC 7.8 %)
 values the share at C$93; peer-median multiples (16.6 × EBITDA, 29.8 × earnings) imply C$200-225,
 CN being the cheapest of its cohort; and the reverse DCF shows the price embeds 11.9 % annual FCFF
-growth for five years against 7.8 % delivered over ten. Both readings can hold at once if the
+growth for five years against 7.8 % delivered over 2011-2025 and 4.0 % over the last ten years. Both readings can hold at once if the
 whole rail cohort trades on demanding expectations: the tie-breaker is delivered growth. The
 thesis-breaking conditions and the full sensitivity grid are in the tables and in the live-formula
 Excel workbook (`reports/classeur_valorisation_cn.xlsx`).

@@ -1,6 +1,6 @@
 grandeur,valeur,statut,source
 cours (CAD),175.06,rapporté,"Yahoo, 2026-08-28"
-actions diluées (millions),604.9,rapporté,"Yahoo, 2026-08-28"
+actions en circulation (millions),604.9,rapporté,"Yahoo, 2026-08-28"
 FCFF de départ (M$ CAD),4103.384325622138,mesuré,"moyenne 2023-2025, SEC"
 dette nette (M$ CAD),20851.0,mesuré,"exercice 2025, SEC"
 taux sans risque,0.037000000000000005,rapporté,"BdC 10 ans, 2026-08-27"
@@ -13,4 +13,4 @@ croissance années 1-5 (scénario de base),0.0321425877789141,modélisé,ancrée
 croissance perpétuelle,0.02,précepte,cible d'inflation BdC
 valeur par action DCF (CAD),93.35152309839843,modélisé,sortie du modèle
 croissance implicite dans le cours,0.11889617070551416,modélisé,DCF inversé
-TCAC FCFF réalisé,0.07770309960859834,mesuré,lissé 3 ans aux deux bouts
+TCAC FCFF réalisé,0.07770309960859834,mesuré,"lissé 3 ans aux deux bouts, période 2011-2025"

@@ -92,7 +92,7 @@ def build(out: Path = Path("results")) -> None:
     comps.round(2).to_csv(tables / "comparables.csv")
     hyp = pd.DataFrame([
         ("cours (CAD)", price, "rapporté", f"Yahoo, {market['date']}"),
-        ("actions diluées (millions)", shares_m, "rapporté", f"Yahoo, {market['date']}"),
+        ("actions en circulation (millions)", shares_m, "rapporté", f"Yahoo, {market['date']}"),
         ("FCFF de départ (M$ CAD)", fcff_base, "mesuré", f"moyenne {last - 2}-{last}, SEC"),
         ("dette nette (M$ CAD)", net_debt, "mesuré", f"exercice {last}, SEC"),
         ("taux sans risque", rf, "rapporté", f"BdC 10 ans, {market['taux_10_ans_canada']['date']}"),
@@ -105,7 +105,7 @@ def build(out: Path = Path("results")) -> None:
         ("croissance perpétuelle", G_TERMINAL, "précepte", "cible d'inflation BdC"),
         ("valeur par action DCF (CAD)", base_value, "modélisé", "sortie du modèle"),
         ("croissance implicite dans le cours", implied, "modélisé", "DCF inversé"),
-        ("TCAC FCFF réalisé", fcff_cagr, "mesuré", "lissé 3 ans aux deux bouts"),
+        ("TCAC FCFF réalisé", fcff_cagr, "mesuré", "lissé 3 ans aux deux bouts, période 2011-2025"),
     ], columns=["grandeur", "valeur", "statut", "source"])
     hyp.to_csv(tables / "hypotheses.csv", index=False)
 

@@ -12,8 +12,8 @@ modélisé) et un classeur Excel aux formules vivantes pour tout refaire soi-mê
 croissance réalisée des revenus, dit **93 $** ; la médiane des multiples des pairs ferroviaires dit
 **200 à 225 $**, le CN étant le moins cher de sa cohorte ; et le DCF inversé, la pièce maîtresse,
 montre que **le cours suppose 11,9 % de croissance annuelle du flux disponible pendant cinq ans,
-contre 7,8 % livré sur dix ans** : le mémo n'arbitre pas, il dit à quelles conditions chaque
-lecture casse.
+contre 7,8 % livré sur 2011-2025 et 4,0 % sur les dix dernières années** : le mémo n'arbitre pas,
+il dit à quelles conditions chaque lecture casse.
 
 *English summary.* One TSX company end to end: Canadian National Railway, valued three ways with
 every assumption statused. Financial history measured from SEC XBRL (companyfacts API, fiscal
@@ -21,7 +21,7 @@ every assumption statused. Financial history measured from SEC XBRL (companyfact
 revenue growth (C$93 per share at a 7.8 % WACC built from dated components); peer multiples
 (median 16.6 × EBITDA, 29.8 × earnings, implying C$200-225, CN the cheapest of its cohort); and a
 reverse DCF showing the C$175 price embeds 11.9 % annual FCFF growth for five years versus 7.8 %
-delivered. Deliverables: four tables, three figures, a live-formula Excel workbook and a bilingual
+delivered over 2011-2025 (4.0 % over the last ten years). Deliverables: four tables, three figures, a live-formula Excel workbook and a bilingual
 investment memo that states what would break each reading.
 
 ## 1. La question posée
@@ -98,9 +98,11 @@ valorisation est arbitraire : chaque chiffre suppose autre chose, et la colonne 
 vraie information. Ensuite, les deux lectures opposées coexistent sans contradiction : le CN est le
 MOINS cher de sa cohorte (14,0 fois l'EBITDA contre 16,6 de médiane) tout en cotant au-dessus de
 son DCF prudent ; si toute la cohorte embarque des attentes exigeantes, les deux sont vraies en
-même temps. Enfin, le juge de paix est la croissance : 11,9 % implicite contre 7,8 % livré en
-FCFF (dont une part venue de l'expansion des marges, qui ne se répète pas à l'infini) et 3,2 % en
-revenus ; l'écart entre ces trois barres est exactement ce que l'acheteur d'aujourd'hui parie.
+même temps. Enfin, le juge de paix est la croissance : 11,9 % implicite, contre 7,8 % livré en
+FCFF sur 2011-2025 (dont une part venue de l'expansion des marges, qui ne se répète pas à
+l'infini), 4,0 % seulement sur les dix dernières années (2015-2025, calculé : 2 753 vers
+4 079 M$), et 3,2 % en revenus ; l'écart entre ces barres est exactement ce que l'acheteur
+d'aujourd'hui parie.
 
 ![Historique du CN](results/figures/historique_cn.png)
 
@@ -114,14 +116,15 @@ vide et annoté.
 
 Comment lire cette figure : chaque barre horizontale est la fourchette d'une méthode, le losange
 noir le scénario prudent du DCF, le trait vermillon le cours ; le cours tombe au-dessus de toute la
-moitié basse du DCF et sous les deux fourchettes de comparables, la position exacte qu'un titre de
-qualité au prix exigeant occupe d'habitude.
+moitié basse du DCF et sous les deux fourchettes de comparables ; la colonne « ce qu'elle
+suppose » du tableau dit ce que chacune de ces positions exige.
 
 ![Croissance implicite](results/figures/croissance_implicite.png)
 
 Comment lire cette figure : la barre du haut est la croissance annuelle du FCFF que le cours actuel
-suppose pendant cinq ans (DCF inversé), les deux autres ce que le CN a réellement livré sur dix
-ans ; l'acheteur à 175 $ parie que l'avenir fera mieux que le passé de 4 points par an.
+suppose pendant cinq ans (DCF inversé), les deux autres ce que le CN a réellement livré (FCFF lissé
+sur 2011-2025, revenus sur 2015-2025) ; l'acheteur à 175 $ parie que l'avenir fera mieux que la
+période 2011-2025 de 4 points par an, et mieux que la dernière décennie de 8 points.
 
 Le mémo d'investissement bilingue, avec le tableau « la thèse casse si », est dans
 [reports/memo_investissement.md](reports/memo_investissement.md) ; le classeur à formules vivantes
