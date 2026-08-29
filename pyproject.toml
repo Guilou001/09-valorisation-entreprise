@@ -28,7 +28,7 @@ dev = ["pytest>=8", "ruff>=0.6"]
 vlab = "vlab.cli:app"
 
 [project.urls]
-Repository = "https://github.com/Guilou001/09-valuation-lab-ca"
+Repository = "https://github.com/Guilou001/09-valorisation-entreprise"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/vlab"]

@@ -4,7 +4,7 @@ Une seule société, travaillée à fond : le Canadien National (CNR.TO), valori
 qui ne racontent pas la même histoire, avec chaque hypothèse statuée (mesuré, rapporté, précepte,
 modélisé) et un classeur Excel aux formules vivantes pour tout refaire soi-même.
 
-[![ci](https://github.com/Guilou001/09-valuation-lab-ca/actions/workflows/ci.yml/badge.svg)](https://github.com/Guilou001/09-valuation-lab-ca/actions/workflows/ci.yml)
+[![ci](https://github.com/Guilou001/09-valorisation-entreprise/actions/workflows/ci.yml/badge.svg)](https://github.com/Guilou001/09-valorisation-entreprise/actions/workflows/ci.yml)
 ![python](https://img.shields.io/badge/python-3.12-blue)
 ![licence](https://img.shields.io/badge/code-MIT-green)
 

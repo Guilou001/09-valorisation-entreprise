@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "Pour citer ce dépôt, utiliser les métadonnées ci-dessous."
-title: "09-valuation-lab-ca : valorisation du Canadien National, DCF statué et DCF inversé"
+title: "09-valorisation-entreprise : valorisation du Canadien National, DCF statué et DCF inversé"
 authors:
   - family-names: Vaudescal
     given-names: Guillaume
 year: 2026
-url: "https://github.com/Guilou001/09-valuation-lab-ca"
-repository-code: "https://github.com/Guilou001/09-valuation-lab-ca"
+url: "https://github.com/Guilou001/09-valorisation-entreprise"
+repository-code: "https://github.com/Guilou001/09-valorisation-entreprise"
 license: MIT
