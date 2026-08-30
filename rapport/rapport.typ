@@ -39,6 +39,8 @@
 
 Une seule société, travaillée à fond : le Canadien National (CNR.TO), valorisé par trois méthodes qui ne racontent pas la même histoire, avec chaque hypothèse statuée (mesuré, rapporté, précepte, modélisé) et un classeur Excel aux formules vivantes pour tout refaire soi-même.
 
+Le même contenu en PDF : #link("rapport/rapport.pdf")[rapport/rapport.pdf].
+
 *Résultat en une phrase.* Au 28 août 2026 (cours 175,06 \$), le DCF prudent, ancré sur la croissance réalisée des revenus, dit *93 \$* ; la médiane des multiples des pairs ferroviaires dit *200 à 225 \$*, le CN étant le moins cher de sa cohorte ; et le DCF inversé, la pièce maîtresse, montre que *le cours suppose 11,9 % de croissance annuelle du flux disponible pendant cinq ans, contre 7,8 % livré sur 2011-2025 et 4,0 % sur les dix dernières années* : le mémo n'arbitre pas, il dit à quelles conditions chaque lecture casse.
 
 _English summary._ One TSX company end to end: Canadian National Railway, valued three ways with every assumption statused. Financial history measured from SEC XBRL (companyfacts API, fiscal 2011-2025, the missing 2021 declared rather than filled); a prudent FCFF DCF anchored on delivered revenue growth (C\$93 per share at a 7.8 % WACC built from dated components); peer multiples (median 16.6 × EBITDA, 29.8 × earnings, implying C\$200-225, CN the cheapest of its cohort); and a reverse DCF showing the C\$175 price embeds 11.9 % annual FCFF growth for five years versus 7.8 % delivered over 2011-2025 (4.0 % over the last ten years). Deliverables: four tables, three figures, a live-formula Excel workbook and a bilingual investment memo that states what would break each reading.

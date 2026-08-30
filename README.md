@@ -8,6 +8,8 @@ modélisé) et un classeur Excel aux formules vivantes pour tout refaire soi-mê
 ![python](https://img.shields.io/badge/python-3.12-blue)
 ![licence](https://img.shields.io/badge/code-MIT-green)
 
+Le même contenu en PDF : [rapport/rapport.pdf](rapport/rapport.pdf).
+
 **Résultat en une phrase.** Au 28 août 2026 (cours 175,06 $), le DCF prudent, ancré sur la
 croissance réalisée des revenus, dit **93 $** ; la médiane des multiples des pairs ferroviaires dit
 **200 à 225 $**, le CN étant le moins cher de sa cohorte ; et le DCF inversé, la pièce maîtresse,
