@@ -1,4 +1,4 @@
-#set document(title: "Que vaut le Canadien National ? Trois réponses, et la croissance que le cours suppose", author: "Guillaume Vaudescal")
+#set document(title: "Que faut-il croire pour justifier le cours du Canadien National ?", author: "Guillaume Vaudescal")
 #set page(
   paper: "a4",
   margin: (x: 2.2cm, y: 2.4cm),
@@ -30,24 +30,30 @@
 
 #align(center)[
   #block(width: 100%)[
-    #text(size: 18pt, weight: "bold")[Que vaut le Canadien National ? Trois réponses, et la croissance que le cours suppose]
+    #text(size: 18pt, weight: "bold")[Que faut-il croire pour justifier le cours du Canadien National ?]
     #v(0.6em)
-    #text(size: 10pt, fill: luma(70))[Guillaume Vaudescal · 2026-08-30 · #link("https://github.com/Guilou001/09-valorisation-entreprise")[Guilou001/09-valorisation-entreprise]]
+    #text(size: 10pt, fill: luma(70))[Guillaume Vaudescal · 2026-09-04 · #link("https://github.com/Guilou001/09-valorisation-entreprise")[Guilou001/09-valorisation-entreprise]]
   ]
 ]
 #v(1.2em)
 #line(length: 100%, stroke: 0.6pt + luma(190))
 #v(0.8em)
 
-Une seule société, travaillée à fond : le Canadien National (CNR.TO), valorisé par trois méthodes qui ne racontent pas la même histoire, avec chaque hypothèse statuée (mesuré, rapporté, précepte, modélisé) et un classeur Excel aux formules vivantes pour tout refaire soi-même.
+La valeur d'une entreprise ne se lit pas directement dans ses états financiers. Elle dépend des profits futurs, du risque associé à ces profits et du prix payé pour attendre. Le présent projet étudie le Canadien National au moyen de trois méthodes qui répondent à des questions différentes.
+
+La première méthode actualise les flux de trésorerie futurs selon des hypothèses prudentes. La deuxième compare l'entreprise à quatre sociétés ferroviaires cotées. La troisième part du cours observé et calcule la croissance qu'il faut supposer pour le retrouver. Cette dernière lecture permet de remplacer un prix cible isolé par une hypothèse que l'on peut confronter à l'histoire de l'entreprise.
+
+*Résultat principal.* Au 28 août 2026, le modèle prudent donne une valeur de 93 dollars par action, tandis que les multiples des sociétés comparables donnent de 200 à 225 dollars. Le cours observé, soit 175,06 dollars, suppose une croissance annuelle du flux disponible de 11,9 % pendant cinq ans. En comparaison, cette croissance a été de 7,8 % entre 2011 et 2025 et de 4,0 % sur les dix dernières années. Le désaccord entre les méthodes vient donc des hypothèses, et non d'une erreur d'arithmétique.
+
+Afin de rendre cette comparaison vérifiable, nous présenterons d'abord les états financiers et le statut de chaque hypothèse. Dans un deuxième temps, nous construirons le coût du capital et les flux actualisés. Ensuite, nous inverserons le modèle et comparerons le résultat aux sociétés ferroviaires semblables. Enfin, nous étudierons la sensibilité, les limites des données et le classeur qui permet de refaire les calculs.
 
 Le même contenu en PDF : #link("rapport/rapport.pdf")[rapport/rapport.pdf].
 
-*Résultat en une phrase.* Au 28 août 2026 (cours 175,06 \$), le DCF prudent, ancré sur la croissance réalisée des revenus, dit *93 \$* ; la médiane des multiples des pairs ferroviaires dit *200 à 225 \$*, le CN étant le moins cher de sa cohorte ; et le DCF inversé, la pièce maîtresse, montre que *le cours suppose 11,9 % de croissance annuelle du flux disponible pendant cinq ans, contre 7,8 % livré sur 2011-2025 et 4,0 % sur les dix dernières années* : le mémo n'arbitre pas, il dit à quelles conditions chaque lecture casse.
+== Résumé en anglais
 
 _English summary._ One TSX company end to end: Canadian National Railway, valued three ways with every assumption statused. Financial history measured from SEC XBRL (companyfacts API, fiscal 2011-2025, the missing 2021 declared rather than filled); a prudent FCFF DCF anchored on delivered revenue growth (C\$93 per share at a 7.8 % WACC built from dated components); peer multiples (median 16.6 × EBITDA, 29.8 × earnings, implying C\$200-225, CN the cheapest of its cohort); and a reverse DCF showing the C\$175 price embeds 11.9 % annual FCFF growth for five years versus 7.8 % delivered over 2011-2025 (4.0 % over the last ten years). Deliverables: four tables, three figures, a live-formula Excel workbook and a bilingual investment memo that states what would break each reading.
 
-== 1. La question posée
+== 1. La question en détail
 
 Que vaut une action du CN, et surtout : le chiffre qui sort d'un modèle dépend-il plus de l'entreprise ou des hypothèses qu'on y met ? En mots simples : plutôt que d'annoncer un prix cible, le dépôt retourne la question, quelle croissance faut-il croire pour justifier le cours d'aujourd'hui, et est-elle plausible au vu de quinze ans d'histoire ?
 
